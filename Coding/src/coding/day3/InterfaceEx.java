@@ -8,6 +8,14 @@ package coding.day3;
 interface Theater{
     
     int totalSeat=500;
+    default void greeting(){
+        System.out.println("'''''''''''''''''''''''''  Welcome To Inox ............................");
+        
+    }
+    static void qoute(){
+        System.out.println("....................'....We Will Statisfy you..............");
+        System.out.println("........With Our Service & Environment.......");
+    }
     void screen1();
     void screen2();
     void screen3();
@@ -49,7 +57,9 @@ class Name implements Place{
 public class InterfaceEx {
     public static void main(String[] args) {
         Name inox=new Name(); 
-        System.out.println("'''''''''''''''''''''''''  Welcome To Inox ............................");
+        
+        inox.greeting();
+        Theater.qoute();
         inox.parking();
         inox.screen1();
         inox.screen2();
