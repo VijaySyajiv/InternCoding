@@ -5,18 +5,19 @@ import coding.InputValidation;
 public class CalenderEg {
 
 	public static void main(String[] args) {
-//		Calendar calendar = Calendar.getInstance();  
-//		   System.out.println("The current date is : " + calendar.getTime()); 
-//		   System.out.println("enter the DOB DD/MM/YYYY Formet");
-//		   
-//		   String sDate1="31/12/1998";
-//		   Date date1=new SimpleDateFormat("dd/MM/yyyy").parse(sDate1);
+//		this class Singleton pattern because we can do the things 
+//		what ever we want using one object in these class
+		Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));  
+		   System.out.println("The current date is : " + calendar.getTime()); 
+           calendar.add(Calendar.DATE, -15);
+		   System.out.println("15 Days ago the data is - "+calendar.getTime().getDate());
+		   System.out.println("15 Days ago the day is - "+calendar.getTime().getDay());
+		   System.out.println("15 Days ago the data is - "+calendar.getTime());
+		  
+		   
 	
 		
-		//calendar.clear();
-		Calendar calendar = Calendar.getInstance();  
-		   System.out.println("At present Calendar's Year: " +calendar.get( Calendar.YEAR+3));  
-		   System.out.println("At present Calendar's Day: " + calendar.get(Calendar.DATE)); 
+		
 		   
 		   
 	}

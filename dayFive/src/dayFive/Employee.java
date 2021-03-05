@@ -1,9 +1,6 @@
-package coding.day4;
-
+package dayFive;
 
 import java.util.Scanner;
-
-import coding.InputValidation;
 
 public class Employee {
 	int id;
@@ -31,7 +28,7 @@ public class Employee {
 		this.dpt = dpt;
 		this.salary = salary;
 	}
-	
+	 
 	public int getId() {
 		return id;
 	}
@@ -39,11 +36,36 @@ public class Employee {
 		return name;
 	}
 	
+	public int getPhonNumber() {
+		return phonNumber;
+	}
+	public int getAge() {
+		return age;
+	}
+	public String getDpt() {
+		return dpt;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setPhonNumber(int phonNumber) {
+		this.phonNumber = phonNumber;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void setDpt(String dpt) {
+		this.dpt = dpt;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
 	@Override
 	public String toString() {
 		return "name=" + name + ", phonNumber=" + phonNumber + ", age=" + age + ", dpt=" + dpt + ", salary="
 				+ salary;
 	}
+	
 	public static Employee Details() {
 	  Scanner in =new Scanner(System.in);
 		int age,salary,phoneNumber;
@@ -68,3 +90,4 @@ public class Employee {
 	
 	
 }
+

@@ -13,6 +13,7 @@ public class CurrDirectory {
     public static void main(String[] args) {
 
         String path = System.getProperty("user.dir");
+        
         String currentUsersHomeDir = System.getProperty("user.home");
         
         System.out.println("Working Directory = " + path);
@@ -20,7 +21,7 @@ public class CurrDirectory {
         System.out.println(System.getProperty("user.name"));
 
     }
-    
+     
 }
 //java.version         Java version number
 //java.vendor          Java vendor specific string

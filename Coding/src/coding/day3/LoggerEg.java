@@ -15,7 +15,7 @@ public class LoggerEg {
 		logger.setLevel(Level.FINE);
 		/*The logs will be generated for all the levels equal to or greater than the logger level. 
 		 * For example if logger level is set to INFO, logs will be generated 
-		 * for INFO, WARNING and SEVERE logging messages
+		 * for INFO, WARNING and SEVERE logging messages 
 		 */
 		Handler formater=new  ConsoleHandler();
 		logger.addHandler(formater);

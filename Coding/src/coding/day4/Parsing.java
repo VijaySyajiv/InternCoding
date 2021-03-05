@@ -25,11 +25,12 @@ public class Parsing {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             // Get Document
-            Document document = builder.parse(new File("EmployeeSalary.xml"));
+            File file=new File("EmployeeBankDetails.xml");
+            Document document = builder.parse(new File("file"));
  
             // Normalize the xml structure
             document.getDocumentElement().normalize();
-
+ 
             // Get all the element by the tag name
 
             NodeList laptopList = document.getElementsByTagName("Employee");

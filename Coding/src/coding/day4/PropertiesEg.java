@@ -13,7 +13,7 @@ public class PropertiesEg {
 		Properties p1=new Properties();  
 		p1.setProperty("name","Vijay");  
 		p1.setProperty("email","svijay2000@gmail.com");  
-		  
+		   
 		p1.store(new FileWriter("info.properties"),"Log-in Details");  
 		 p1.clear();
 		 

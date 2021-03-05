@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmployeeSalary>
+    <Employee name="vijay">
+        <AccountNumber value="545454" />
+        <IFSCCCode value="KL45454"/>
+        <BankName name="hk jkjk"/>
+    </Employee>
+    <Employee name="kumar">
+        <AccountNumber value="544454521" />
+        <IFSCCCode value="MK45454"/>
+        <BankName name="dbckd dhjd"/>
+    </Employee>
+    <Employee name="Suresh">
+        <AccountNumber value="4545454" />
+        <IFSCCCode value="LK545456"/>
+        <BankName name="dshkjds dkjds"/>
+    </Employee>
+</EmployeeSalary>

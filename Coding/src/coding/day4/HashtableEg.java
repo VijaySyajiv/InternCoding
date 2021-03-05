@@ -37,7 +37,7 @@ public class HashtableEg {
 					   }
 			     } 
 				
-			}
+			} 
 			if(option==3) {
 				System.out.println("Total Employees "+Employee.total);
 //				for(Map.Entry<Integer,Employee> emp:zoho.entrySet()){  
