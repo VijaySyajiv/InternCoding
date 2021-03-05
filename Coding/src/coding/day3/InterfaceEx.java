@@ -9,11 +9,11 @@ interface Theater{
     
     int totalSeat=500;
     default void greeting(){
-        System.out.println("'''''''''''''''''''''''''  Welcome To Inox ............................");
+        System.out.println("........................  Welcome To Inox ............................");
         
     }
     static void qoute(){
-        System.out.println("....................'....We Will Statisfy you..............");
+        System.out.println(".........................We Will Statisfy you..............");
         System.out.println("........With Our Service & Environment.......");
     }
     void screen1();

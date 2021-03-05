@@ -15,7 +15,7 @@ public class Singleton {
     }
     public static Singleton getInstance(int x){
         if(instance==null){
-            return instance=new Singleton(x);
+            return instance=new Si ngleton(x);
         }
         return instance;
     }

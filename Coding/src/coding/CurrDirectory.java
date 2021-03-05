@@ -17,7 +17,23 @@ public class CurrDirectory {
         
         System.out.println("Working Directory = " + path);
         System.out.println("current User HomeDir  "+currentUsersHomeDir);
+        System.out.println(System.getProperty("user.name"));
 
     }
     
 }
+//java.version         Java version number
+//java.vendor          Java vendor specific string
+//java.vendor.url      Java vendor URL
+//java.home            Java installation directory
+//java.class.version   Java class version number
+//java.class.path      Java class path
+//os.name              Operating System Name
+//os.arch              Operating System Architecture
+//os.version           Operating System Version
+//file.separator       File separator ("/" on Unix)
+//path.separator       Path separator (":" on Unix)
+//line.separator       Line separator ("\n" on Unix)
+//user.name            User account name
+//user.home            User home directory
+//user.dir             User's current working directory

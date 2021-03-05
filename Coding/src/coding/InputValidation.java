@@ -13,16 +13,17 @@ import java.util.*;
 public class InputValidation {
     public static int integerValidation(){
         int n;
-        Scanner in =new Scanner(System.in);
+        
         while(true){
-              System.out.println("Enter the number integer");
+        	Scanner in =new Scanner(System.in);
                    String s=in.next();
                   try{
                       n=Integer.parseInt(s);
                       return n;
                   }    
                   catch(NumberFormatException e){
-                      System.out.println(" invalid input "+e);
+                      System.out.println(" invalid input");
+                      System.out.println("Please enter the number integer");
                       continue;
                   }
                       
