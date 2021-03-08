@@ -12,7 +12,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.*;
-
+ 
 public class WriteXml {
 	public static void main(String[] args) throws Exception{
 		  
@@ -67,8 +67,8 @@ public class WriteXml {
 //			        } 
 					
 					DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-				    DocumentBuilder builder = factory.newDocumentBuilder();
-				    Document doc=builder.newDocument();
+				    DocumentBuilder builder = factory.newDocumentBuilder();//for DocumentBuilder.object
+				    Document doc=builder.newDocument();//dom object
 				    Element employeeRoot=doc.createElement("Employees");
 				    
 				    for(Employee e:zoho) {
@@ -107,7 +107,7 @@ public class WriteXml {
 					}
 				   doc.appendChild(employeeRoot);
 				    Transformer t=TransformerFactory.newInstance().newTransformer();
-				    
+				                   //source file,output destination file
 				   t.transform(new DOMSource(doc),new StreamResult(new FileOutputStream("E:\\Xml\\EmployeeBankDetails.xml")));
 				    System.out.println("Xml Created");
 					System.exit(0);

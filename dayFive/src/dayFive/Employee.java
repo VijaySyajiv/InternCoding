@@ -24,7 +24,7 @@ public class Employee {
 		
 		this.name = name;
 		this.phonNumber = phonNumber;
-		this.age = age;
+		this.age = age; 
 		this.dpt = dpt;
 		this.salary = salary;
 	}
@@ -80,14 +80,36 @@ public class Employee {
 		System.out.println("enter the age");
 		age=InputValidation.integerValidation();
 		Department.display();
-		dept=Department.departmentNameValidator();
+		dept=Department.departmentNameValidator(); 
 		System.out.println("enter the salary");
-		salary=4;InputValidation.integerValidation();
+		salary=InputValidation.integerValidation();
 		Employee object =new Employee(name,phoneNumber,age,dept,salary);
 		//in.close();
 		return object;
 	}
-	
-	
+//	public static Employee Details() {
+//		 
+//			int age,salary,phoneNumber;
+//			String name,dept;
+//			 
+//			System.out.println("employee "+(++Employee.total));
+//			
+//			System.out.println("enter the name");
+//			name=in.next();
+//			System.out.println("enter the phone number");
+//			phoneNumber=InputValidation.integerValidation();
+//			System.out.println("enter the age");
+//			age=InputValidation.integerValidation();
+//			Department.display();
+//			dept=Department.departmentNameValidator(); 
+//			System.out.println("enter the salary");
+//			salary=4;InputValidation.integerValidation();
+//			Employee object =new Employee(name,phoneNumber,age,dept,salary);
+//			//in.close();
+//			return object;
+//		}
+//	
+//	
+//	
 }
 

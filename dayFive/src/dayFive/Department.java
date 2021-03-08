@@ -15,6 +15,7 @@ public enum Department {
 	public static String departmentNameValidator() {
 		while(true){
 			try {
+				System.out.println("Enter the Department name");
 				Scanner in =new Scanner(System.in);
 				String deptName=in.next();
 				
