@@ -43,11 +43,8 @@ public class JdbcEg {
 						displayEmployeeDetails(con);
 						System.out.println("Enter the ID of the person to delete");
 						int id=in.nextInt();
-//						PreparedStatement st=con.prepareStatement("delete from employee where id=?");  
-//						st.setInt(1,id); 
 						Statement st=con.createStatement();   
 						int result=st.executeUpdate("delete from employee where id="+id);  
-//					    st.executeUpdate();  
 						displayEmployeeDetails(con);
 						System.out.println(" records deleted");  
 		
