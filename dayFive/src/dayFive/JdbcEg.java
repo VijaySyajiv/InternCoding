@@ -18,8 +18,12 @@ public class JdbcEg {
 		String url="jdbc:mysql://localhost:3306/zohoemployee";
 		String uname="root";
 		String pass="";
-		//Class.forName("com.mysql.jdbc.Driver");  
+//		then JDBC driver manager can detect and load the driver automatically.
+//		Class.forName("com.mysql.jdbc.Driver");  
 		Connection con=DriverManager.getConnection(url,uname,pass);
+//		SQL statements without parameters are normally executed using Statement objects.
+//		If the same SQL statement is executed many times,
+//		it may be more efficient to use a PreparedStatement object. 
 //		Statement sat=con.createStatement();
 //		ResultSet rs=sat.execute();
 		
@@ -39,11 +43,13 @@ public class JdbcEg {
 						displayEmployeeDetails(con);
 						System.out.println("Enter the ID of the person to delete");
 						int id=in.nextInt();
-						PreparedStatement st=con.prepareStatement("delete from employee where id=?");  
-						st.setInt(1,id);  
-						int i=st.executeUpdate();  
+//						PreparedStatement st=con.prepareStatement("delete from employee where id=?");  
+//						st.setInt(1,id); 
+						Statement st=con.createStatement();   
+						int result=st.executeUpdate("delete from employee where id="+id);  
+//					    st.executeUpdate();  
 						displayEmployeeDetails(con);
-						System.out.println(i+" records deleted");  
+						System.out.println(" records deleted");  
 		
 					}
 					if(option==3) {

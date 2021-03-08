@@ -42,7 +42,7 @@ public class ArrayListEg {
 //					}
 //					Iterator interface -> 	 methods over rided  by Arraylist	
 					//Iterator itr = zoho.iterator(); 
-					ListIterator itr = zoho.listIterator(); 
+					ListIterator<Employee> itr = zoho.listIterator(); 
 					
 			        while (itr.hasNext()) 
 			        { 
