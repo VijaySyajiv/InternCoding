@@ -4,7 +4,7 @@ import java.util.*;
 
 public class ArrayListEg {
 		public static void main(String[] args) {
-			ArrayList<Employee> zoho=new Arr ayList<>();
+			List<Employee> zoho=new ArrayList<>();
 			System.out.println("................Empoyee Database List..........");
 			while(true) { 
 				Scanner in =new Scanner(System.in);
